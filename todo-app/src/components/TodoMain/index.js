@@ -7,7 +7,7 @@ import "./main.scss";
 class TodoMain extends Component {
     constructor(props){
         super(props);
-        //³õÊ¼»¯Êı¾İ
+        //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }
     render() {
         const todos = this.props.todos;
@@ -17,7 +17,7 @@ class TodoMain extends Component {
                 {
                     todos.map((todo,index,arr) =>{
                         return (
-                            <TodoItem key={index} todo={todo} {...this.props}/>
+                            <TodoItem key={index} todo={todo} index={index} {...this.props}/>
                         )})
                 }
             </ul>
